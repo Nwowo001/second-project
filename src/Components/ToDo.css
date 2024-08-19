@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(hsl(240, 88%, 16%), hsla(0, 94%, 31%, 0.932));
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.to-do-list {
+  background-color: hsla(0, 0%, 100%, 0.192);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: black;
+  text-align: center;
+  font-size: 1.7rem;
+}
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.add-button {
+  width: 25%;
+  padding: 8px;
+  background-color: hsla(240, 100%, 50%, 0.562);
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-button:hover {
+  background-color: hsla(244, 89%, 7%, 0.781);
+}
+
+ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  position: relative;
+  padding: 10px 40px 10px 10px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.897);
+}
+
+.text {
+  font-size: 18px;
+  color: #333333;
+}
+
+.delete-icon,
+.edit-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #777777;
+}
+
+.edit-icon {
+  right: 40px;
+}
+
+.delete-icon:hover {
+  color: #e74c3c;
+}
+
+.edit-icon:hover {
+  color: #3498db;
+}
+
+button {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+input[type="text"]:focus,
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
